@@ -1,1 +1,14 @@
-some ideas
+this is a small library who try to add some new Array methods
+
+Methods
+-------
+max,
+min,
+indexOf,
+avg,
+range,
+first,
+last,
+withOut,
+even,
+odd

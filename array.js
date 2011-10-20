@@ -68,8 +68,8 @@ Array.prototype.last = function(){
 
 Array.prototype.withOut = function(v){
 	if(v !== undefined){
-		var len = this.length, arr = [];
-		for(var i = 0; i < len; i++){
+		var arr = [];
+		for(var i = 0, len = this.length; i < len; i++){
 			if(this[i] !== v){
 				arr.push(this[i]);
 			}
@@ -79,4 +79,26 @@ Array.prototype.withOut = function(v){
 	}else{
 		return undefined;	
 	}
+};
+
+Array.prototype.even = function() {
+    var arr = [];
+    for(var i = 0, len = this.length; i < len; i++){
+        if(i % 2){
+            arr.push(this[i]);
+        }
+    }
+
+    return arr;
+};
+
+Array.prototype.odd = function() {
+    var arr = [];
+    for(var i = 0, len = this.length; i < len; i++){
+        if(i % 2 === 0){
+            arr.push(this[i]);
+        }
+    }
+
+    return arr;
 };
